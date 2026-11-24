@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brew & Bean - Good coffee, better moments. Discover handcrafted coffee, fresh pastries and a welcoming space.">
+    <meta name="theme-color" content="#26382F">
+
+    <title>Brew & Bean | Good Coffee. Better Moments.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                BREW <span>&</span> BEAN
+                <small>COFFEE HOUSE</small>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Open navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#menu">Our Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#menu" class="btn btn-dark nav-cta">Order Coffee</a>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+
+                <span class="eyebrow">YOUR NEIGHBOURHOOD COFFEE HOUSE</span>
+
+                <h1>Good coffee.<br>
+                    <span>Better moments.</span>
+                </h1>
+
+                <p>
+                    From carefully selected coffee beans to freshly
+                    prepared pastries, discover the little things
+                    that make every day better.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-light">Explore Our Menu</a>
+                    <a href="#about" class="btn btn-outline">Discover Our Story</a>
+                </div>
+
+            </div>
+
+            <div class="hero-note">
+                <span>FRESHLY BREWED</span>
+                <span>·</span>
+                <span>MADE WITH CARE</span>
+            </div>
+
+        </section>
+
+
+        <!-- Introduction -->
+        <section class="intro section-padding" id="about">
+
+            <div class="container intro-grid">
+
+                <div class="intro-image">
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=900"
+                         alt="Freshly prepared coffee in a coffee shop">
+                    <div class="image-label">Made with passion, served with love.</div>
+                </div>
+
+                <div class="intro-content">
+
+                    <span class="eyebrow">A LITTLE ABOUT US</span>
+
+                    <h2>More than coffee.<br>
+                        <span>A place to belong.</span>
+                    </h2>
+
+                    <p>
+                        At Brew & Bean, we believe great coffee brings
+                        people together. Whether you're starting your
+                        morning, catching up with friends or taking
+                        a quiet moment for yourself, there's always
+                        a place for you here.
+                    </p>
+
+                    <p>
+                        Every cup is prepared with attention,
+                        quality ingredients and a genuine love
+                        for the coffee experience.
+                    </p>
+
+                    <a href="#contact" class="text-link">
+                        Come visit us <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Menu -->
+        <section class="menu-section section-padding" id="menu">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">MADE FRESH, EVERY DAY</span>
+                    <h2>Something for every <span>craving.</span></h2>
+                    <p>Discover your new favourite from our carefully
+                       prepared selection.</p>
+                </div>
+
+                <div class="menu-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="coffee">Coffee</button>
+                    <button class="filter-btn" data-filter="tea">Tea</button>
+                    <button class="filter-btn" data-filter="pastries">Pastries</button>
+                </div>
+
+                <div class="menu-grid" id="menuGrid">
+
+                    <article class="menu-card" data-category="coffee">
+                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600"
+                             alt="Cappuccino">
+                        <div class="menu-card-content">
+                            <span class="menu-category">COFFEE</span>
+                            <h3>Classic Cappuccino</h3>
+                            <p>Rich espresso topped with smooth steamed milk.</p>
+                            <div class="menu-card-bottom">
+                                <strong>KSh 350</strong>
+                                <button class="add-btn" data-name="Classic Cappuccino" data-price="350">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="coffee">
+                        <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=600"
+                             alt="Latte">
+                        <div class="menu-card-content">
+                            <span class="menu-category">COFFEE</span>
+                            <h3>Vanilla Latte</h3>
+                            <p>Espresso, creamy milk and a touch of vanilla.</p>
+                            <div class="menu-card-bottom">
+                                <strong>KSh 400</strong>
+                                <button class="add-btn" data-name="Vanilla Latte" data-price="400">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="coffee">
+                        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=600"
+                             alt="Iced coffee">
+                        <div class="menu-card-content">
+                            <span class="menu-category">COFFEE</span>
+                            <h3>Iced Coffee</h3>
+                            <p>Refreshing chilled coffee served over ice.</p>
+                            <div class="menu-card-bottom">
+                                <strong>KSh 380</strong>
+                                <button class="add-btn" data-name="Iced Coffee" data-price="380">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="tea">
+                        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600"
+                             alt="Cup of tea">
+                        <div class="menu-card-content">
+                            <span class="menu-category">TEA</span>
+                            <h3>Classic Chai</h3>
+                            <p>Comforting Kenyan tea brewed with milk and spices.</p>
+                            <div class="menu-card-bottom">
+                                <strong>KSh 250</strong>
+                                <button class="add-btn" data-name="Classic Chai" data-price="250">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="pastries">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600"
+                             alt="Fresh croissants">
+                        <div class="menu-card-content">
+                            <span class="menu-category">PASTRIES</span>
+                            <h3>Butter Croissant</h3>
+                            <p>Golden, flaky and freshly baked.</p>
+                            <div class="menu-card-bottom">
+                                <strong>KSh 280</strong>
+                                <button class="add-btn" data-name="Butter Croissant" data-price="280">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="pastries">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600"
+                             alt="Chocolate cake">
+                        <div class="menu-card-content">
+                            <span class="menu-category">PASTRIES</span>
+                            <h3>Chocolate Cake</h3>
+                            <p>Rich chocolate cake for your sweet moments.</p>
+                            <div class="menu-card-bottom">
+                                <strong>KSh 450</strong>
+                                <button class="add-btn" data-name="Chocolate Cake" data-price="450">+</button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="menu-order">
+                    <button class="btn btn-dark" id="viewOrder">
+                        View My Order (<span id="cartCount">0</span>)
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Brand Statement -->
+        <section class="quote-section">
+            <div class="container quote-content">
+                <span class="eyebrow">THE BREW & BEAN EXPERIENCE</span>
+                <h2>Slow down. Sip slowly.<br>Enjoy the moment.</h2>
+                <p>Because the best moments deserve a good cup of coffee.</p>
+            </div>
+        </section>
+
+
+        <!-- Gallery -->
+        <section class="gallery-section section-padding" id="gallery">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">A GLIMPSE INTO OUR WORLD</span>
+                    <h2>Moments at <span>Brew & Bean.</span></h2>
+                </div>
+
+                <div class="gallery-grid">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"
+                         alt="Coffee preparation">
+                    <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800"
+                         alt="Coffee shop interior">
+                    <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=800"
+                         alt="Coffee and breakfast">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Visit and Contact -->
+        <section class="contact-section section-padding" id="contact">
+
+            <div class="container contact-grid">
+
+                <div class="contact-info">
+
+                    <span class="eyebrow">WE'D LOVE TO SEE YOU</span>
+
+                    <h2>Your next favourite<br>
+                        coffee is <span>waiting.</span>
+                    </h2>
+
+                    <p>Stop by, say hello and enjoy a freshly prepared
+                       cup of something wonderful.</p>
+
+                    <div class="contact-detail">
+                        <strong>LOCATION</strong>
+                        <p>Westlands, Nairobi, Kenya</p>
+                    </div>
+
+                    <div class="contact-detail">
+                        <strong>OPENING HOURS</strong>
+                        <p>Monday – Saturday: 7:00 AM – 8:00 PM</p>
+                        <p>Sunday: 8:00 AM – 5:00 PM</p>
+                    </div>
+
+                    <div class="contact-detail">
+                        <strong>EMAIL</strong>
+                        <p>hello@brewandbean.example</p>
+                    </div>
+
+                </div>
+
+                <form class="contact-form" id="contactForm">
+
+                    <h3>Send us a message</h3>
+                    <p>Have a question? We'd love to hear from you.</p>
+
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" placeholder="you@example.com" required>
+
+                    <label for="message">Your message</label>
+                    <textarea id="message" rows="5"
+                              placeholder="How can we help?" required></textarea>
+
+                    <button type="submit" class="btn btn-dark">Send Message</button>
+
+                    <p id="formMessage" class="form-message" aria-live="polite"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- Newsletter -->
+        <section class="newsletter-section">
+            <div class="container newsletter-content">
+                <div>
+                    <span class="eyebrow">A LITTLE SOMETHING IN YOUR INBOX</span>
+                    <h2>Stay in the <span>loop.</span></h2>
+                    <p>Get updates, coffee inspiration and special offers.</p>
+                </div>
+
+                <form id="newsletterForm" class="newsletter-form">
+                    <input type="email" id="newsletterEmail"
+                           placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe →</button>
+                </form>
+                <p id="newsletterMessage" aria-live="polite"></p>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    BREW <span>&</span> BEAN
+                    <small>COFFEE HOUSE</small>
+                </a>
+                <p>Good coffee. Better moments.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">Our Story</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <p class="copyright">
+                © <span id="year"></span> Brew & Bean Coffee House.
+                All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+
+    <!-- Order Summary Modal -->
+    <div class="modal" id="orderModal" aria-hidden="true">
+        <div class="modal-content" role="dialog"
+             aria-modal="true" aria-labelledby="orderTitle">
+
+            <button class="modal-close" id="closeModal"
+                    aria-label="Close order summary">&times;</button>
+
+            <h2 id="orderTitle">Your Order</h2>
+            <div id="orderItems"></div>
+
+            <div class="order-total">
+                <span>Total</span>
+                <strong id="orderTotal">KSh 0</strong>
+            </div>
+
+            <button class="btn btn-dark" id="clearOrder">Clear Order</button>
+
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
